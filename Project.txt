@@ -1,0 +1,11 @@
+Changes:
+-Add GUI,Controller and Questions classes;
+-Add .gitignore;
+-Add Project.txt;
+-Add interfaces;
+
+Deprecated:
+
+TODO:
+-Make Questions Class observable, GUI Class as observer;
+-Define interfaces;
