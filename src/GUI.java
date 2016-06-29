@@ -9,9 +9,8 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import java.util.ArrayList;
-
-/**
- * Created by michael.ioschpa on 08.06.2016.
+/*
+ Author: Samuel Glogger
  */
 public class GUI extends Application{
 

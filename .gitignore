@@ -1,2 +1,5 @@
-#Ignore idea directory
+#Ignore idea directory and files
 /idea
+.idea/
+*.iml
+out/
