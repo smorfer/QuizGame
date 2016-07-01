@@ -1,4 +1,5 @@
 import javafx.application.Application;
+import javafx.event.EventHandler;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -8,6 +9,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
+import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 /*
  Author: Samuel Glogger
@@ -40,6 +42,13 @@ public class GUI extends Application{
         startMenu.setSpacing(20);
         startMenu.setAlignment(Pos.CENTER);
         startMenu.getChildren().addAll(start,settings,quit);
+
+        start.setOnAction(new EventHandler<javafx.event.ActionEvent>() {
+            @Override
+            public void handle(javafx.event.ActionEvent actionEvent) {
+
+            }
+        });
 
 
         primaryStage.setScene(scene);
