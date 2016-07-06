@@ -1,4 +1,4 @@
-import javafx.application.Application;
+import com.failexe.Questions.Questions;
 
 public class Controller{
      static Questions questions;
