@@ -65,6 +65,7 @@ public class GUI extends Application{
         AnswerBox.getChildren().add(secondRow);
         QuizMenu.setCenter(QuestionLabel);
         QuizMenu.setBottom(AnswerBox);
+        AnswerBox.setAlignment(Pos.CENTER);
 
         final Scene GameScene = new Scene(QuizMenu,500,300);
 
