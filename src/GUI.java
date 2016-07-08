@@ -3,7 +3,9 @@ import javafx.event.EventHandler;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
@@ -20,7 +22,7 @@ public class GUI extends Application{
         launch(args);
     }
 
-    public void start(Stage primaryStage){
+    public void start(final Stage primaryStage){
 
         primaryStage.setTitle("QuizGame");
         primaryStage.show();
@@ -42,11 +44,34 @@ public class GUI extends Application{
         startMenu.setSpacing(20);
         startMenu.setAlignment(Pos.CENTER);
         startMenu.getChildren().addAll(start,settings,quit);
+        BorderPane QuizMenu = new BorderPane();
+        Button firstAnswer, secondAnswer, thirdAnswer, fourthAnswer;
+        firstAnswer = new Button();
+        secondAnswer = new Button();
+        thirdAnswer = new Button();
+        fourthAnswer = new Button();
+        Label QuestionLabel = new Label();
+        HBox AnswerBox = new HBox();
+        AnswerBox.setSpacing(15);
+        VBox firstRow = new VBox();
+        VBox secondRow = new VBox();
+        firstRow.setSpacing(15);
+        secondRow.setSpacing(15);
+        firstRow.getChildren().add(firstAnswer);
+        firstRow.getChildren().add(secondAnswer);
+        secondRow.getChildren().add(thirdAnswer);
+        secondRow.getChildren().add(fourthAnswer);
+        AnswerBox.getChildren().add(firstRow);
+        AnswerBox.getChildren().add(secondRow);
+        QuizMenu.setCenter(QuestionLabel);
+        QuizMenu.setBottom(AnswerBox);
+
+        final Scene GameScene = new Scene(QuizMenu,500,300);
 
         start.setOnAction(new EventHandler<javafx.event.ActionEvent>() {
             @Override
             public void handle(javafx.event.ActionEvent actionEvent) {
-
+                primaryStage.setScene(GameScene);
             }
         });
 
