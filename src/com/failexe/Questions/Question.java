@@ -3,7 +3,7 @@ package com.failexe.Questions;
 /**
  * Created by sebastian.rink on 06.07.2016.
  */
-public class Question {
+public class Question extends Content {
 
     private String question;
     private String trueAnswer;

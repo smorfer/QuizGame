@@ -1,8 +1,21 @@
 package com.failexe.Questions;
+import com.failexe.Questions.List.Listelement;
 
 public class Questions implements QuestionsInterface {
+
+    private Listelement first;
+
+    public Questions(Listelement first) {
+        this.first = first;
+    }
+
+    public Listelement getFirst() {
+        return first;
+    }
+
+
     @Override
-    //Uncompleted Method
+
     public Question getQuestion() {
         return null;
     }
