@@ -5,6 +5,6 @@ package com.failexe.List;
  */
 public class End {
 
-    public End {}
+    public End () {}
 }
 
