@@ -2,7 +2,8 @@ package com.failexe.Questions;
 
 public class Questions implements QuestionsInterface {
     @Override
-    public void getQuestion() {
-
+    //Uncompleted Method
+    public Question getQuestion() {
+        return null;
     }
 }
