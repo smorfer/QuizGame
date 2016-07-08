@@ -1,4 +1,4 @@
-package com.failexe.Questions.List;
+package com.failexe.List;
 
 /**
  * Created by sebastian.rink on 08.07.2016.
