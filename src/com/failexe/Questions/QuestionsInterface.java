@@ -2,6 +2,6 @@ package com.failexe.Questions;
 
 public interface QuestionsInterface{
 
-    public void getQuestion();
+    public Question getQuestion();
 
 }
