@@ -17,7 +17,10 @@ public class End extends Listelement {
     public Content getLastContent(Content currentContent)
     {return currentContent;}
 
-    public Listelement delete()
+    public Listelement deleteNode()
+    {}
+
+    public Listelement addNode()
     {}
 
     public Node getNode()

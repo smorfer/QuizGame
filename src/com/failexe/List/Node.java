@@ -28,7 +28,7 @@ public class Node {
     public Node addNode()
     {}
 
-    public Listelement delete()
+    public Listelement deleteNode()
     {}
 
     public int getNodeQuantity()
