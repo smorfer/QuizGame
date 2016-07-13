@@ -5,6 +5,7 @@ package com.failexe.Highscore;
  */
 
 public class Highscorelist {
-    private
+
+
 
 }
