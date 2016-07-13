@@ -1,35 +1,40 @@
 package com.failexe.Questions;
 import com.failexe.List.Listelement;
-import java.io.*;
+
+import java.io.File;
 
 public class Questions implements QuestionsInterface {
 
     private Listelement first;
+    private File file;
 
-    public Questions(Listelement first) {
+    public Questions(Listelement first, File file) {
         this.first = first;
+        this.file = file;
     }
 
     public Listelement getFirst() {
         return first;
     }
 
-    private static void readQuestions() throws  IOException {
-        FileReader fr = new FileReader("Fragen.docx");
-        BufferedReader br = new BufferedReader(fr);
-
-        String q = br.readLine();
-        String ta = br.readLine();
-        String fa1 = br.readLine();
-        String fa2 = br.readLine();
-        String fa3 = br.readLine();
-        double w = br.readLine();
-        new Question(q,ta,fa1,fa2,fa3,w);
+    private insert(Question q){
+        first.insert(q);
     }
+
+    public void getQuestions(){
+        fileReader fr = new fileReader(file);
+
+        while (!fr.finish()) {
+            this.insert(fr.readQuestion());
+        }
+        fr.finish();
+    }
+
+
 
     @Override
 
     public Question getQuestion() {
-        return null;
+        return null
     }
 }
