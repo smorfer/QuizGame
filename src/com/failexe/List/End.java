@@ -24,7 +24,7 @@ public class End extends Listelement {
     {}
 
     public int getNodeQuantity()
-    {}
+    {return 0;}
 
     public void showData()
     {}
