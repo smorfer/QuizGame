@@ -62,7 +62,7 @@ class fileReader{
 
         if(s.hasNext()){
 
-            temporaryString = s.next();
+            temporaryString = s.nextLine();
 
             return temporaryString;
 
