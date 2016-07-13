@@ -43,15 +43,11 @@ class fileReader{
             w = Double.parseDouble(wString);
         }
 
-        return new Question(q,ta,fa1,fa2,fa3,w)
+        return new Question(q,ta,fa1,fa2,fa3,w);
     }
 
     boolean finish(){
-        if(s.hasNext()){
-            return false;
-        }else {
-            return true;
-        }
+        return !s.hasNext();
 
     }
 

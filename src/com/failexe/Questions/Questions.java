@@ -11,13 +11,14 @@ public class Questions implements QuestionsInterface {
     public Questions(Listelement first, File file) {
         this.first = first;
         this.file = file;
+
     }
 
     public Listelement getFirst() {
         return first;
     }
 
-    private insert(Question q){
+    private void insert(Question q){
         first.insert(q);
     }
 
@@ -25,7 +26,8 @@ public class Questions implements QuestionsInterface {
         fileReader fr = new fileReader(file);
 
         while (!fr.finish()) {
-            this.insert(fr.readQuestion());
+            //this.insert(fr.readQuestion());
+            fr.readQuestion().printQuestion();
         }
         fr.finish();
     }
@@ -35,6 +37,6 @@ public class Questions implements QuestionsInterface {
     @Override
 
     public Question getQuestion() {
-        return null
+        return null;
     }
 }

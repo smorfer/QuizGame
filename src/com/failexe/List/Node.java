@@ -25,11 +25,13 @@ public class Node {
     public Content getContent()
     {return content;}
 
-    public Node addNode()
-    {}
+    public Node addNode() {
+        return null;
+    }
 
-    public Listelement deleteNode()
-    {}
+    public Listelement deleteNode() {
+        return null;
+    }
 
     public int getNodeQuantity()
     {return 1+next.getNodeQuantity();}
