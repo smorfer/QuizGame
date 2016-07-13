@@ -6,4 +6,11 @@ package com.failexe.Highscore;
 
 public class Score {
 
+    protected int score;
+    protected String player;
+
+    public Score(int s, String p)
+    {score = s;
+     player = p;
+    }
 }
