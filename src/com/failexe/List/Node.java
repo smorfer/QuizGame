@@ -5,7 +5,7 @@ package com.failexe.List;
  */
 public class Node {
     private Listelement next;
-    private Content content;
+    public Content content;
 
     public Node(Listelement n, Content c)
     {
