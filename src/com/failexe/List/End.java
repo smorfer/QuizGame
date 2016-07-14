@@ -7,6 +7,9 @@ import com.failexe.Questions.Question;
  */
 public class End extends Listelement {
 
+   public End()
+   {}
+
 
    public Listelement getNext()
    {return this;}
