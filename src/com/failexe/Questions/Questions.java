@@ -1,21 +1,20 @@
 package com.failexe.Questions;
 import com.failexe.List.Listelement;
-
 import java.io.File;
 
 public class Questions implements QuestionsInterface {
 
-    private Listelement first;
+    private List list;
     private File file;
 
     public Questions(Listelement first, File file) {
-        this.first = first;
+        this.list = list;
         this.file = file;
 
     }
 
     public Listelement getFirst() {
-        return first;
+        return list.getfirst;
     }
 
     private void insert(Question q){
@@ -26,8 +25,7 @@ public class Questions implements QuestionsInterface {
         fileReader fr = new fileReader(file);
 
         while (!fr.finish()) {
-            //this.insert(fr.readQuestion());
-            fr.readQuestion().printQuestion();
+            this.insert(fr.readQuestion());
         }
         fr.finish();
     }
