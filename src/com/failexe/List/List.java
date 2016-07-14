@@ -5,4 +5,9 @@ package com.failexe.List;
  */
 public class List {
     private Listelement first = new End();
+
+    //Methods
+
+    public Listelement getFirst()
+    {return first;}
 }
