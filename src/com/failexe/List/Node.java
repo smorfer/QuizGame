@@ -1,9 +1,11 @@
 package com.failexe.List;
 
+import com.failexe.Questions.Question;
+
 /**
  * Created by sebastian.rink on 08.07.2016.
  */
-public class Node {
+public class Node extends Listelement{
     private Listelement next;
     public Content content;
 
@@ -25,10 +27,7 @@ public class Node {
     public Content getContent()
     {return content;}
 
-    public Node addNode(Content newContent) {
-        next = next.addNode(newContent);
-        return this;
-    }
+
 
     public Listelement deleteNode() {
         return null;
@@ -37,4 +36,24 @@ public class Node {
     public int getNodeQuantity()
     {return 1+next.getNodeQuantity();}
 
+    @Override
+    public Node getNode() {
+        return this;
+    }
+
+    @Override
+    public Listelement addNode(Content newContent){
+        next = next.addNode(newContent);
+        return this;
+    }
+
+    @Override
+    public void showData() {
+
+    }
+
+    @Override
+    public void insert(Question q) {
+
+    }
 }

@@ -9,7 +9,7 @@ public abstract class Listelement {
     public abstract Listelement getNext();
     public abstract Content getContent();
     public abstract Node getNode();
-    public abstract Listelement addNode();
+    public abstract Listelement addNode(Content newContent);
     public abstract Listelement deleteNode();
     public abstract int getNodeQuantity();
     public abstract void showData();

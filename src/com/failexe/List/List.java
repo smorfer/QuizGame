@@ -12,11 +12,11 @@ public class List {
     {return first;}
 
     public void addLast(Content newContent)
-    {first = first.addNode(newContent)}
+    {first = first.addNode(newContent);}
 
     public Content getLastContent()
     {Content content = first.getContent();
-    content = first.getNext().getContent()
+    content = first.getNext().getContent();
     return content;}
 
     public void deleteNode()
