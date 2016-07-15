@@ -17,16 +17,13 @@ public class End extends Listelement {
     public Content getContent()
     {return null;}
 
-    public Node addBackwards(Content nodeContent)
-    {return new Node(this, nodeContent);}
+    public Listelement addNode(Content newContent)
+    {return new Node(this, newContent);}
 
-    public Content getLastContent(Content currentContent)
+    public Content getContent(Content currentContent)
     {return currentContent;}
 
     public Listelement deleteNode()
-    {return null;}
-
-    public Listelement addNode()
     {return null;}
 
     public Node getNode()
