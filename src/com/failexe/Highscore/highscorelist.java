@@ -4,10 +4,11 @@ package com.failexe.Highscore;
  * Created by schueler05.0019 on 08.07.2016.
  */
 
+
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class HighScore {
+public class Highscorelist {
     private final ArrayList<Integer> scoreList;
 
     public HighScore (){
@@ -16,7 +17,7 @@ public class HighScore {
 
 
     public void putScore(int score){
-        score.List.add(score);
+        Score.List.add(score);
         Collections.sort(scoreList);
     }
     public int[] getHighestScores(int quantity){
@@ -29,7 +30,4 @@ public class HighScore {
         }
         return highScores;
     }
-
-
-
 }

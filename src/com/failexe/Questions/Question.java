@@ -1,8 +1,11 @@
 package com.failexe.Questions;
 
+import com.failexe.List.Content;
+
 /**
  * Created by sebastian.rink on 06.07.2016.
  */
+
 public class Question extends Content {
 
     private String question;
@@ -19,6 +22,14 @@ public class Question extends Content {
         falseAnswer2 = fa2;
         falseAnswer3 = fa3;
         weighting = w;
+    }
+
+    public void printQuestion(){
+        System.out.println("Question: " + getQuestion());
+        System.out.println("Answer1 " + getTrueAnswer());
+        System.out.println("Answer2: " + getFalseAnswer1());
+        System.out.println("Answer3: " + getFalseAnswer2());
+        System.out.println("Answer4: " + getFalseAnswer3());
     }
 
     public String getQuestion() {

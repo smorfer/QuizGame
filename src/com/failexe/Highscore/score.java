@@ -6,9 +6,9 @@ package com.failexe.Highscore;
 
 public class Score {
     private int score;
-    private HighScore highScore;
-
-    public Score (HighScore highScore) {
+    private Highscorelist highScore;
+    
+    public Score (Highscorelist highScore) {
         score=0;
         this.highScore = highScore;
     }
@@ -33,5 +33,6 @@ public class Score {
 
     public void setScore(int score){
         this.score =score;
+
     }
 }
