@@ -24,10 +24,13 @@ public class GUI extends Application{
         launch(args);
     }
 
-    public void start(final Stage primaryStage){
+    Stage window;
 
-        primaryStage.setTitle("QuizGame");
-        primaryStage.show();
+    public void start(Stage primaryStage){
+
+        window = primaryStage;
+        window.setTitle("QuizGame");
+        window.show();
         VBox startMenu = new VBox();
         Button start = new Button("Start");
         Button quit = new Button("Quit");
@@ -74,13 +77,13 @@ public class GUI extends Application{
         start.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                primaryStage.setScene(GameScene);
+                window.setScene(GameScene);
             }
         });
         quit.setOnAction(new EventHandler<ActionEvent> () {
             @Override
             public void handle(ActionEvent actionEvent) {
-                primaryStage.close();
+                closeGame();
             }
         });
 
@@ -88,5 +91,10 @@ public class GUI extends Application{
         primaryStage.setScene(scene);
 
 
+    }
+    public void closeGame(){
+        if(ConfirmBox.display("Exit","Are you sure you want to exit?")){
+            window.close();
+        }
     }
 }
