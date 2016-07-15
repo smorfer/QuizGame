@@ -1,4 +1,5 @@
 package com.failexe.Questions;
+import com.failexe.List.Content;
 import com.failexe.List.List;
 import com.failexe.List.Listelement;
 import java.io.File;
@@ -14,7 +15,7 @@ public class Questions implements QuestionsInterface {
 
     }
 
-    private void insert(Question q){
+    private void insert(Content q){
         list.getFirst().addNode(q);
     }
 
