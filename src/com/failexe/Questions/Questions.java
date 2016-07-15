@@ -28,6 +28,8 @@ public class Questions implements QuestionsInterface {
             newList.addLast(fr.readQuestion());
         }
         fr.finish();
+
+        return newList;
     }
 
 
