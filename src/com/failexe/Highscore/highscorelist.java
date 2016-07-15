@@ -9,15 +9,15 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class Highscorelist {
-    private final ArrayList<Integer> scoreList;
+    private final ArrayList <Integer> scoreList;
 
-    public HighScore (){
+    public Highscorelist (){
         scoreList=new ArrayList();
     }
 
 
     public void putScore(int score){
-        Score.List.add(score);
+        scoreList.add(score);
         Collections.sort(scoreList);
     }
     public int[] getHighestScores(int quantity){
