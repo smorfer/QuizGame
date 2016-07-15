@@ -55,7 +55,16 @@ public class GUI extends Application{
         secondAnswer = new Button();
         thirdAnswer = new Button();
         fourthAnswer = new Button();
+        firstAnswer.setPrefSize(150,50);
+        secondAnswer.setPrefSize(150,50);
+        thirdAnswer.setPrefSize(150,50);
+        fourthAnswer.setPrefSize(150,50);
+        firstAnswer.setText("To visit the idiot.");
+        secondAnswer.setText("To visit you.");
+        thirdAnswer.setText("To visit the butcher.");
+        fourthAnswer.setText("To visit the store.");
         Label QuestionLabel = new Label();
+        QuestionLabel.setText("Why does the chicken cross the road?");
         HBox AnswerBox = new HBox();
         AnswerBox.setSpacing(15);
         VBox firstRow = new VBox();
