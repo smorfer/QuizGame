@@ -7,7 +7,7 @@ package com.failexe.Highscore;
 public class Score {
     private int score;
     private Highscorelist highScore;
-    
+
     public Score (Highscorelist highScore) {
         score=0;
         this.highScore = highScore;
