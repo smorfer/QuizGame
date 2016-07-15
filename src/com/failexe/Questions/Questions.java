@@ -1,4 +1,5 @@
 package com.failexe.Questions;
+import com.failexe.List.List;
 import com.failexe.List.Listelement;
 import java.io.File;
 
@@ -14,11 +15,11 @@ public class Questions implements QuestionsInterface {
     }
 
     public Listelement getFirst() {
-        return list.getfirst;
+        return list.getFirst();
     }
 
     private void insert(Question q){
-        first.insert(q);
+        list.getFirst().insert(q);
     }
 
     public void getQuestions(){

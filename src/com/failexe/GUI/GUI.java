@@ -1,3 +1,5 @@
+package com.failexe.GUI;
+
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
@@ -11,7 +13,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-import java.awt.event.ActionEvent;
+import javafx.event.ActionEvent;
 import java.util.ArrayList;
 /*
  Author: Samuel Glogger
@@ -69,10 +71,16 @@ public class GUI extends Application{
 
         final Scene GameScene = new Scene(QuizMenu,500,300);
 
-        start.setOnAction(new EventHandler<javafx.event.ActionEvent>() {
+        start.setOnAction(new EventHandler<ActionEvent>() {
             @Override
-            public void handle(javafx.event.ActionEvent actionEvent) {
+            public void handle(ActionEvent actionEvent) {
                 primaryStage.setScene(GameScene);
+            }
+        });
+        quit.setOnAction(new EventHandler<ActionEvent> () {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                primaryStage.close();
             }
         });
 
