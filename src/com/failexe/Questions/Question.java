@@ -9,18 +9,18 @@ import com.failexe.List.Content;
 public class Question extends Content {
 
     private String question;
-    private String trueAnswer;
-    private String falseAnswer1;
-    private String falseAnswer2;
-    private String falseAnswer3;
+    private Answer trueAnswer;
+    private Answer falseAnswer1;
+    private Answer falseAnswer2;
+    private Answer falseAnswer3;
     private int weighting;
 
     public Question (String q, String ta, String fa1, String fa2, String fa3, int w){
         question = q;
-        trueAnswer = ta;
-        falseAnswer1 = fa1;
-        falseAnswer2 = fa2;
-        falseAnswer3 = fa3;
+        trueAnswer = new Answer(ta,true);
+        falseAnswer1 = new Answer(fa1,false);
+        falseAnswer2 = new Answer(fa2,false);
+        falseAnswer3 = new Answer(fa3,false);
         weighting = w;
     }
 
@@ -36,47 +36,23 @@ public class Question extends Content {
         return question;
     }
 
-    public void setQuestion(String question) {
-        this.question = question;
-    }
-
-    public String getTrueAnswer() {
+    public Answer getTrueAnswer() {
         return trueAnswer;
     }
 
-    public void setTrueAnswer(String trueAnswer) {
-        this.trueAnswer = trueAnswer;
-    }
-
-    public String getFalseAnswer1() {
+    public Answer getFalseAnswer1() {
         return falseAnswer1;
     }
 
-    public void setFalseAnswer1(String falseAnswer1) {
-        this.falseAnswer1 = falseAnswer1;
-    }
-
-    public String getFalseAnswer2() {
+    public Answer getFalseAnswer2() {
         return falseAnswer2;
     }
 
-    public void setFalseAnswer2(String falseAnswer2) {
-        this.falseAnswer2 = falseAnswer2;
-    }
-
-    public String getFalseAnswer3() {
+    public Answer getFalseAnswer3() {
         return falseAnswer3;
     }
 
-    public void setFalseAnswer3(String falseAnswer3) {
-        this.falseAnswer3 = falseAnswer3;
-    }
-
-    public double getWeighting() {
-        return weighting;
-    }
-
-    public void setWeighting(double weighting) {
-        this.weighting = weighting;
+    public boolean check(Answer answer){
+        return answer.check();
     }
 }

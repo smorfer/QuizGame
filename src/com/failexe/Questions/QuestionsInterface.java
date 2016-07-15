@@ -2,6 +2,7 @@ package com.failexe.Questions;
 
 public interface QuestionsInterface{
 
-    public Question getQuestion(double weighting);
+    public Question getQuestion(int weighting);
+    public boolean check(Answer answer);
 
 }

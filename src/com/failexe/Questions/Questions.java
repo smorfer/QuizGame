@@ -20,9 +20,9 @@ public class Questions implements QuestionsInterface {
     }
 
 
-    public List getQuestions(int weighting){
+    private List getQuestions(int weighting){
         List newList = new List();
-        fileReader fr = new fileReader(file[weighting]);
+        fileReader fr = new fileReader(files[weighting]);
 
         while (!fr.finish()) {
             newList.addLast(fr.readQuestion());
@@ -35,6 +35,10 @@ public class Questions implements QuestionsInterface {
     @Override
 
     public Question getQuestion(int weighting) {
-        return lists[weighting].getRandom();
+        return = lists[weighting].getRandom();
+    }
+
+    public boolean check(Answer answer){
+        return answer.check();
     }
 }

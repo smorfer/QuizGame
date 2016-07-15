@@ -28,7 +28,7 @@ class fileReader{
         String fa2;
         String fa3;
         String wString;
-        double w;
+        int w;
 
         q = this.read();
         ta = this.read();
@@ -40,7 +40,7 @@ class fileReader{
         if(wString == null) {
             w = 0;
         } else {
-            w = Double.parseDouble(wString);
+            w = Integer.parseInt(wString);
         }
 
         return new Question(q,ta,fa1,fa2,fa3,w);
