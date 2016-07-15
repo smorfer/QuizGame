@@ -19,7 +19,7 @@ public class Questions implements QuestionsInterface {
     }
 
     private void insert(Question q){
-        list.getFirst().insert(q);
+        list.getFirst().addNode(q);
     }
 
     public void getQuestions(){
