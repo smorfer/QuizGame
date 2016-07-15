@@ -13,15 +13,13 @@ public class Question extends Content {
     private Answer falseAnswer1;
     private Answer falseAnswer2;
     private Answer falseAnswer3;
-    private int weighting;
 
-    public Question (String q, String ta, String fa1, String fa2, String fa3, int w){
+     Question (String q, String ta, String fa1, String fa2, String fa3, int w){
         question = q;
         trueAnswer = new Answer(ta,true);
         falseAnswer1 = new Answer(fa1,false);
         falseAnswer2 = new Answer(fa2,false);
         falseAnswer3 = new Answer(fa3,false);
-        weighting = w;
     }
 
     public void printQuestion(){

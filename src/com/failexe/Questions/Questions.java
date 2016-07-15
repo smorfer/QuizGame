@@ -7,7 +7,7 @@ public class Questions implements QuestionsInterface {
     private List[] lists = new List[10];
     private File[] files = new File[10];
 
-    public Questions(File file) {
+    public Questions() {
 
         for(int i = 0; i < 10; i++){
             this.files[i] = new File("//files//Questions" + i + ".txt");

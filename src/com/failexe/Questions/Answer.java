@@ -1,7 +1,7 @@
 package com.failexe.Questions;
 
 /**
- * Created by sebas on 15.07.2016.
+ * Created by sebastian.rink on 15.07.2016.
  */
 class Answer {
 
