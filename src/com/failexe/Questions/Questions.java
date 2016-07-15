@@ -1,36 +1,31 @@
 package com.failexe.Questions;
-import com.failexe.List.Content;
 import com.failexe.List.List;
-import com.failexe.List.Listelement;
 import java.io.File;
 
 public class Questions implements QuestionsInterface {
 
-    private List[] list[];
-    private File[] file[];
+    private List[] lists = new List[10];
+    private File[] files = new File[10];
 
     public Questions(File file) {
-        list[] = new List[10];
-        file[] = new File[10];
 
         for(int i = 0; i < 10; i++){
-            this.file[i] = /*source*/Questions[i];
+            this.files[i] = new File("//files//Questions" + i + ".txt");
         }
 
         for(int i = 0; i< 10; i++){
-            this.list[i] = getQuestions(i);
+            this.lists[i] = getQuestions(i);
         }
-        this.file = file;
-        this.getQuestions();
 
     }
 
 
-    public void getQuestions(int weighting){
+    public List getQuestions(int weighting){
+        List newList = new List();
         fileReader fr = new fileReader(file[weighting]);
 
         while (!fr.finish()) {
-            this.insert(fr.readQuestion());
+            newList.addLast(fr.readQuestion());
         }
         fr.finish();
     }
@@ -39,7 +34,7 @@ public class Questions implements QuestionsInterface {
 
     @Override
 
-    public Question getQuestion(double weighting) {
-
+    public Question getQuestion(int weighting) {
+        return lists[weighting].getRandom();
     }
 }
