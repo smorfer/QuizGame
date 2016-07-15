@@ -6,21 +6,28 @@ import java.io.File;
 
 public class Questions implements QuestionsInterface {
 
-    private List list;
-    private File file;
+    private List[] list[];
+    private File[] file[];
 
-    public Questions(List list, File file) {
-        this.list = list;
+    public Questions(File file) {
+        list[] = new List[10];
+        file[] = new File[10];
+
+        for(int i = 0; i < 10; i++){
+            this.file[i] = /*source*/Questions[i];
+        }
+
+        for(int i = 0; i< 10; i++){
+            this.list[i] = getQuestions(i);
+        }
         this.file = file;
+        this.getQuestions();
 
     }
 
-    private void insert(Content q){
-        list.getFirst().addNode(q);
-    }
 
-    public void getQuestions(){
-        fileReader fr = new fileReader(file);
+    public void getQuestions(int weighting){
+        fileReader fr = new fileReader(file[weighting]);
 
         while (!fr.finish()) {
             this.insert(fr.readQuestion());
@@ -32,7 +39,7 @@ public class Questions implements QuestionsInterface {
 
     @Override
 
-    public Question getQuestion() {
-        return null;
+    public Question getQuestion(double weighting) {
+
     }
 }

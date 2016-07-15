@@ -13,9 +13,9 @@ public class Question extends Content {
     private String falseAnswer1;
     private String falseAnswer2;
     private String falseAnswer3;
-    private double weighting;
+    private int weighting;
 
-    public Question (String q, String ta, String fa1, String fa2, String fa3, double w){
+    public Question (String q, String ta, String fa1, String fa2, String fa3, int w){
         question = q;
         trueAnswer = ta;
         falseAnswer1 = fa1;

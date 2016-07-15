@@ -2,6 +2,6 @@ package com.failexe.Questions;
 
 public interface QuestionsInterface{
 
-    public Question getQuestion();
+    public Question getQuestion(double weighting);
 
 }
