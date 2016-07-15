@@ -5,12 +5,34 @@ package com.failexe.Highscore;
  */
 
 public class Score {
+    private int score;
+    private Highscorelist highScore;
+    
+    public Score (Highscorelist highScore) {
+        score=0;
+        this.highScore = highScore;
+    }
 
-    protected int score;
-    protected String player;
+    public void increaseScore(){
+        score ++;
+    }
 
-    public Score(int s, String p)
-    {score = s;
-     player = p;
+    public void decreaseScore(){
+        if(score > 0){
+            score--;
+        }
+    }
+
+    public void resetScore(){
+        score=0;
+    }
+
+    public int getScore(int score){
+        return score;
+    }
+
+    public void setScore(int score){
+        this.score =score;
+
     }
 }

@@ -25,8 +25,9 @@ public class Node {
     public Content getContent()
     {return content;}
 
-    public Node addNode() {
-        return null;
+    public Node addNode(Content newContent) {
+        next = next.addNode(newContent);
+        return this;
     }
 
     public Listelement deleteNode() {
@@ -36,6 +37,4 @@ public class Node {
     public int getNodeQuantity()
     {return 1+next.getNodeQuantity();}
 
-    public void showData()
-    {}
 }
