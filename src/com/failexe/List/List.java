@@ -23,4 +23,9 @@ public class List {
     {
 
     }
+
+    public Listelement getRandom()
+    {
+        return first.getRandom();
+    }
 }

@@ -5,5 +5,5 @@ package com.failexe.List;
  */
 
 public abstract class Content {
-
+    public abstract Content getContent();
 }

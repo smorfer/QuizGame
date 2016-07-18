@@ -56,4 +56,9 @@ public class Node extends Listelement{
     public void insert(Question q) {
 
     }
+
+    public Listelement getRandom()
+    {
+        content.getContent();
+    }
 }

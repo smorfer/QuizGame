@@ -39,5 +39,10 @@ public class End extends Listelement {
  public void insert(Question q) {
 
  }
+
+    public Listelement getRandom()
+    {
+        return null;
+    }
 }
 
