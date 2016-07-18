@@ -59,6 +59,6 @@ public class Node extends Listelement{
 
     public Listelement getRandom()
     {
-        content.getContent();
+       return content.getContent();
     }
 }
