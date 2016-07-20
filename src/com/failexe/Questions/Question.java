@@ -53,4 +53,12 @@ public class Question extends Content {
     public boolean check(Answer answer){
         return answer.check();
     }
+
+    @Override
+
+    public Content getContent(){
+        return this;
+    }
+
+
 }
