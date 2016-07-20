@@ -63,7 +63,7 @@ public class Node extends Listelement{
        if(index == 0){
            deliver = this.getContent();
        }else{
-           deliver = this.getRandom(index-1);
+           deliver = next.getRandom(index-1);
        }
         return deliver;
     }
