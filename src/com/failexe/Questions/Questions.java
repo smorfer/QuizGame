@@ -40,6 +40,7 @@ public class Questions implements QuestionsInterface {
         return (Question) lists[weighting].getRandom();
     }
 
+    @Override
     public boolean check(Answer answer){
         return answer.check();
     }
