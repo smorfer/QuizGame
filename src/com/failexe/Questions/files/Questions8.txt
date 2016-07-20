@@ -1,1 +1,20 @@
-
+Mit welchem Protokoll werden unter anderem Netzwerkeinstellungen an Clients versendet?
+DHCP
+RIP
+ARP
+EIGRP
+Wie nennt man eine Kurvenfahrttechnik beim Motorradfahren?
+hanging off
+hanging down
+hanging on
+hanging up 
+Was wird in der Chemie durch das sog. Amalgamverfahren gewonnen?
+Natronlauge
+Kalilauge
+Salpetersäure
+Salzsäure 
+Ein römischer Kaiser wurde bekannt durch folgende Aussage: „Pecunia non …“?
+…olet
+…ridet
+…pinzet
+…gaudit 
