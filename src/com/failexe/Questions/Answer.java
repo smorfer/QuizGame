@@ -3,7 +3,7 @@ package com.failexe.Questions;
 /**
  * Created by sebastian.rink on 15.07.2016.
  */
-class Answer {
+public class Answer {
 
     private String answer;
     private boolean rightAnswer;
@@ -13,7 +13,7 @@ class Answer {
         this.rightAnswer = right;
     }
 
-    String getAnswer(){
+    public String getAnswer(){
         return  answer;
     }
 
