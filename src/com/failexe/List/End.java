@@ -40,7 +40,7 @@ public class End extends Listelement {
 
  }
 
-    public Listelement getRandom()
+    public Content getRandom()
     {
         return null;
     }
