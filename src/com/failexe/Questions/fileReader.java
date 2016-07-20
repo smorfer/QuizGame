@@ -27,23 +27,14 @@ class fileReader{
         String fa1;
         String fa2;
         String fa3;
-        String wString;
-        int w;
 
         q = this.read();
         ta = this.read();
         fa1 = this.read();
         fa2 = this.read();
         fa3 = this.read();
-        wString = this.read();
 
-        if(wString == null) {
-            w = 0;
-        } else {
-            w = Integer.parseInt(wString);
-        }
-
-        return new Question(q,ta,fa1,fa2,fa3,w);
+        return new Question(q,ta,fa1,fa2,fa3);
     }
 
     boolean finish(){

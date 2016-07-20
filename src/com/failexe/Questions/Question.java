@@ -14,7 +14,7 @@ public class Question extends Content {
     private Answer falseAnswer2;
     private Answer falseAnswer3;
 
-     Question (String q, String ta, String fa1, String fa2, String fa3, int w){
+     Question (String q, String ta, String fa1, String fa2, String fa3){
         question = q;
         trueAnswer = new Answer(ta,true);
         falseAnswer1 = new Answer(fa1,false);
@@ -24,10 +24,10 @@ public class Question extends Content {
 
     public void printQuestion(){
         System.out.println("Question: " + getQuestion());
-        System.out.println("Answer1 " + getTrueAnswer());
-        System.out.println("Answer2: " + getFalseAnswer1());
-        System.out.println("Answer3: " + getFalseAnswer2());
-        System.out.println("Answer4: " + getFalseAnswer3());
+        System.out.println("Answer1 " + getTrueAnswer().getAnswer());
+        System.out.println("Answer2: " + getFalseAnswer1().getAnswer());
+        System.out.println("Answer3: " + getFalseAnswer2().getAnswer());
+        System.out.println("Answer4: " + getFalseAnswer3().getAnswer());
     }
 
     public String getQuestion() {
