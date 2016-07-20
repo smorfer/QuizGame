@@ -57,8 +57,14 @@ public class Node extends Listelement{
 
     }
 
-    public Content getRandom()
+    public Content getRandom(int index)
     {
-       return content.getContent();
+        Content deliver;
+       if(index == 0){
+           deliver = this.getContent();
+       }else{
+           deliver = this.getRandom(index-1);
+       }
+        return deliver;
     }
 }

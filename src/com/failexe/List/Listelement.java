@@ -14,5 +14,5 @@ public abstract class Listelement {
     public abstract int getNodeQuantity();
     public abstract void showData();
     public abstract void insert(Question q);
-    public abstract Content getRandom();
+    public abstract Content getRandom(int index);
 }

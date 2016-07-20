@@ -1,5 +1,7 @@
 package com.failexe.List;
 
+import java.util.Random;
+
 /**
  * Created by Michi on 14.07.2016.
  */
@@ -23,9 +25,13 @@ public class List {
     {
 
     }
+    public int getNodeQuantity(){
+        return first.getNodeQuantity();
+    }
 
     public Content getRandom()
     {
-        return first.getRandom();
+        Random ran = new Random();
+        return first.getRandom(ran.nextInt(getNodeQuantity()-1));
     }
 }
