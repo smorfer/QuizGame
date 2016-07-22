@@ -1,7 +1,6 @@
 package com.failexe.Questions;
 import com.failexe.List.List;
 import java.io.File;
-import java.lang.String;
 
 public class Questions implements QuestionsInterface {
 
@@ -10,10 +9,6 @@ public class Questions implements QuestionsInterface {
 
     public Questions() {
 
-        //Not working
-        /*for(int i = 1; i < 10; i++){
-            this.files[i] = new File("files/Questions" + String.valueOf(1) + ".txt");
-        }*/
         this.files[0] = new File(".\\src\\com\\failexe\\Questions\\files\\Questions1.txt");
         this.files[1] = new File(".\\src\\com\\failexe\\Questions\\files\\Questions2.txt");
         this.files[2] = new File(".\\src\\com\\failexe\\Questions\\files\\Questions3.txt");

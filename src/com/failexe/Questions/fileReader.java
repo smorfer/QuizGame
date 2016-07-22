@@ -38,7 +38,7 @@ class fileReader{
     }
 
     boolean finish(){
-        return !s.hasNext();
+        return !(s.hasNext());
 
     }
 

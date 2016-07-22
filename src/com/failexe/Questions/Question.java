@@ -14,7 +14,7 @@ public class Question extends Content {
     private Answer falseAnswer2;
     private Answer falseAnswer3;
 
-     Question (String q, String ta, String fa1, String fa2, String fa3){
+    public Question (String q, String ta, String fa1, String fa2, String fa3){
         question = q;
         trueAnswer = new Answer(ta,true);
         falseAnswer1 = new Answer(fa1,false);

@@ -1,5 +1,7 @@
 package com.failexe.List;
 
+import com.failexe.Questions.Question;
+
 import java.util.Random;
 
 /**
@@ -32,6 +34,7 @@ public class List {
     public Content getRandom()
     {
         Random ran = new Random();
-        return first.getRandom(ran.nextInt(getNodeQuantity()));
+        //return new Question("Test","Test","Test","test","test");
+        return first.getRandom(ran.nextInt(this.getNodeQuantity()));
     }
 }
