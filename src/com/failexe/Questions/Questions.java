@@ -39,7 +39,7 @@ public class Questions implements QuestionsInterface {
         while (!fr.finish()) {
             newList.addLast(fr.readQuestion());
         }
-        fr.finish();
+        fr.close();
 
         return newList;
     }

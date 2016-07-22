@@ -32,6 +32,6 @@ public class List {
     public Content getRandom()
     {
         Random ran = new Random();
-        return first.getRandom(ran.nextInt(getNodeQuantity())-1);
+        return first.getRandom(ran.nextInt(getNodeQuantity()));
     }
 }
