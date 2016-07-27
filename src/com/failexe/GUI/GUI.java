@@ -36,7 +36,7 @@ public class GUI extends Application{
     Button secondAnswer;
     Button thirdAnswer;
     Button fourthAnswer;
-    Label QuestionLabel = new Label();
+    Label QuestionLabel;// = new Label();
     int level;
     Answer trueAnswer;
     Scene WinnerScene;
@@ -46,6 +46,8 @@ public class GUI extends Application{
 
 
     public void start(Stage primaryStage){
+
+        QuestionLabel = new Label();
 
         if(questions == null){
             System.out.println("error");
